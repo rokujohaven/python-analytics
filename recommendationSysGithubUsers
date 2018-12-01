@@ -13,7 +13,7 @@ for n, d in G.nodes(data=True):
     # Iterate over all possible triangle relationship combinations
     for n1, n2 in combinations(G.neighbors(n), 2):
     
-        # Check whether n1 and n2 do not have an edge
+        # Check whether n1 and n2 do not have an edge (there is an open triangle between n, n1, and n2)
         if not G.has_edge(n1, n2):
         
             # Increment recommended
